@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+    <h2>Welcome @{{ user.username }}</h2>
+        <h3>*Create Posts</h3>
+         <h3>*Create Groups</h3>
+        <h3>*Learn free</h3>
+        <h3>*Introduce your friend to Dead|Developer</h3>
+    {% endif %}
+{% endblock %}
